@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Yen Stewart",
+        "price": "115",
+        "category": "home",
+        "image": "uploads\/e5d2dda9-2e14-406f-86ab-988958e39e95.avif",
+        "description": "Iure aut omnis volup"
+    },
+    {
+        "name": "Amena Mcneil",
+        "price": "202",
+        "category": "electronics",
+        "image": "uploads\/1f50c8cd-cc76-41de-9780-f7ce85a6ae75.avif",
+        "description": "Eveniet et animi i"
+    },
+    {
+        "name": "Quyn Fisher",
+        "price": "532",
+        "category": "other",
+        "image": "uploads\/cbd054c1-c822-4cad-83dd-5550cd909727.avif",
+        "description": "Sunt harum autem qua"
+    },
+    {
+        "name": "Shad Noble",
+        "price": "124",
+        "category": "electronics",
+        "image": "uploads\/b07f9d66-b83f-4767-82a6-5f013a55096c.avif",
+        "description": "Suscipit aut culpa p"
+    }
+]
