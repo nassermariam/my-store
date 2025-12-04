@@ -1,7 +1,6 @@
 <?php include '../../inc/header.php' ?>
 <?php include '../../inc/navbar.php' ?>
 
-Header
 <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">

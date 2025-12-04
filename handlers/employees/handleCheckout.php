@@ -1,10 +1,8 @@
 <?php
-// Handle checkout: save order and clear cart.json, then redirect home
 require_once __DIR__ . '/../../core/function.php';
 
 $cart = getCart();
 
-// compute total
 $total = 0.0;
 foreach ($cart as $item) {
     $price = isset($item['price']) ? floatval($item['price']) : 0.0;
@@ -26,11 +24,9 @@ $orders[] = [
 
 file_put_contents($ordersFile, json_encode($orders, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
-// clear cart
 clearCart();
 
 setMessage('success', 'Checkout complete — thank you for your order.');
 
-// redirect to home
 header('Location: ../../index.php');
 exit;

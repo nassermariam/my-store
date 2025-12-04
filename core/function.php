@@ -537,12 +537,12 @@ function updateContact($id, $name, $email, $message)
 {
     $contactJsonFile = realpath(__DIR__ . "/../data/contact.json");
 
-    // تحميل بيانات الاتصال
+
     $contacts = file_exists($contactJsonFile) ? json_decode(file_get_contents($contactJsonFile), true) : [];
 
     $found = false;
 
-    // المرور على كل عنصر لتحديث البيانات
+    
     foreach ($contacts as &$c) {
         if ($c['id'] == $id) {
             $c['name'] = $name;
@@ -553,7 +553,7 @@ function updateContact($id, $name, $email, $message)
         }
     }
 
-    // حفظ البيانات بعد التعديل
+
     if ($found) {
         file_put_contents($contactJsonFile, json_encode($contacts, JSON_PRETTY_PRINT));
         return true;
@@ -563,9 +563,7 @@ function updateContact($id, $name, $email, $message)
 }
 
 
-/**
- * Cart persistence helpers (store cart in data/cart.json)
- */
+
 function getCartFilePath()
 {
     $dataDir = __DIR__ . '/../data';
@@ -597,9 +595,9 @@ function addToCart(array $product)
         $cart = [];
     }
 
-    // normalize product fields
+    
     $product['id'] = (string) ($product['id'] ?? '');
-    // if no id provided, generate a stable unique id
+
     if (empty($product['id'])) {
         $product['id'] = uniqid('p_', true);
     }

@@ -26,5 +26,12 @@
         "category": "electronics",
         "image": "uploads\/b07f9d66-b83f-4767-82a6-5f013a55096c.avif",
         "description": "Suscipit aut culpa p"
+    },
+    {
+        "name": "Sonya Morales",
+        "price": "954",
+        "category": "other",
+        "image": "uploads\/2c77bdc6-e313-4577-85bd-05aaeebf92e8.png",
+        "description": "Ut in quo asperiores"
     }
 ]

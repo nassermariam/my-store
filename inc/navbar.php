@@ -14,7 +14,7 @@
 
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ms-lg-4">
                 <?php if (isset($_SESSION['user'])):
-                    // compute cart totals using data/cart.json
+
                     $_cart = function_exists('getCart') ? getCart() : [];
                     $cartCount = 0;
                     $cartTotal = 0.0;
